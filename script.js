@@ -41,36 +41,6 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Contact form handling
-const contactForm = document.querySelector('.contact-form');
-if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        // Get form data
-        const formData = new FormData(this);
-        const name = formData.get('name');
-        const email = formData.get('email');
-        const message = formData.get('message');
-        
-        // Simple validation
-        if (!name || !email || !message) {
-            alert('Vänligen fyll i alla fält.');
-            return;
-        }
-        
-        // Email validation
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(email)) {
-            alert('Vänligen ange en giltig e-postadress.');
-            return;
-        }
-        
-        // Simulate form submission
-        alert('Tack för ditt meddelande! Jag kommer att svara så snart som möjligt.');
-        this.reset();
-    });
-}
 
 // Intersection Observer for animations
 const observerOptions = {
@@ -89,7 +59,7 @@ const observer = new IntersectionObserver((entries) => {
 
 // Observe elements for animation
 document.addEventListener('DOMContentLoaded', () => {
-    const animatedElements = document.querySelectorAll('.skill-item, .car-card, .contact-method');
+    const animatedElements = document.querySelectorAll('.skill-item, .car-card');
     
     animatedElements.forEach(el => {
         el.style.opacity = '0';
