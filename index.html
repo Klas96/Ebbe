@@ -1,154 +1,382 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ebbe Torpel - Bilentusiast</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>CrushMaster Pro - Mobile Waste Compaction Services</title>
+    <meta name="description" content="Save time, money & space with mobile waste compaction. Up to 70% reduction in dumpster volume. No contracts, on-demand service.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header class="hero">
-        <nav class="navbar">
-            <div class="nav-container">
-                <div class="nav-logo">
-                    <h2>Ebbe Torpel</h2>
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="#hem">Hem</a></li>
-                    <li><a href="#om-mig">Om mig</a></li>
-                    <li><a href="#bilar">Bilar</a></li>
-                </ul>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>CrushMaster Pro</h2>
             </div>
-        </nav>
-        
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1>Hej, jag är <span class="highlight">Ebbe Torpel</span></h1>
-                <p class="hero-subtitle">Bilentusiast & Passionerad Samlare</p>
-                <p class="hero-description">
-                    Välkommen till min värld av klassiska bilar, motorhistoria och passion för allt som rullar på fyra hjul.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#om-mig" class="btn btn-primary">Läs mer om mig</a>
-                    <a href="#bilar" class="btn btn-secondary">Se mina bilar</a>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#process">How It Works</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact" class="cta-button">Get Quote</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Save Time, Money & Space with Mobile Compaction</h1>
+                <p class="hero-subtitle">Introducing CrushMaster Pro - the ultimate waste compaction solution! Reduce dumpster volume by up to 70% and slash your waste management costs.</p>
+                <div class="hero-benefits">
+                    <div class="benefit">
+                        <i class="fas fa-check-circle"></i>
+                        <span>On-demand compaction, no contract necessary</span>
+                    </div>
+                    <div class="benefit">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Up to 70% reduction in dumpster volume</span>
+                    </div>
+                    <div class="benefit">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Keep your dumpsters lean and wallet full</span>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <button class="btn-primary" onclick="scrollToContact()">Get Free Quote</button>
+                    <button class="btn-secondary" onclick="scrollToProcess()">How It Works</button>
                 </div>
             </div>
             <div class="hero-image">
-                <img src="profil.jpg" alt="Ebbe Torpel med sin klassiska bil" class="profile-img">
+                <div class="truck-placeholder">
+                    <i class="fas fa-truck"></i>
+                    <p>Mobile Compaction Truck</p>
+                </div>
             </div>
         </div>
-    </header>
+    </section>
 
-    <main>
-        <section id="om-mig" class="about">
-            <div class="container">
-                <h2>Om mig</h2>
-                <div class="about-content">
-                    <div class="about-text">
-                        <p>
-                            Jag heter Ebbe Torpel och min passion för bilar har följt mig sedan jag var liten. 
-                        <p>
-                            Som 18-åring har jag redan hunnit bygga upp en stark passion för klassiska bilar. 
-                            Även om jag fortfarande lär mig, så är min entusiasm och vilja att förstå 
-                            allt om bilar obegränsad.
-                        </p>
-                            Det som började som en fascination för motorer och mekanik har utvecklats till en 
-                            kärlek till klassiska fordon och bilhistoria.
-                        </p>
-                        <p>
-                            Jag älskar att utforska gamla bilar, lära mig om deras historia och dela min 
-                            kunskap med andra entusiaster. Varje bil har sin egen historia att berätta, 
-                            och jag tycker om att vara en del av den berättelsen.
-                        </p>
-                        <div class="skills">
-                            <div class="skill-item">
-                                <i class="fas fa-wrench"></i>
-                                <h3>Mekanik</h3>
-                                <p>Lär mig bilreparationer</p>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fas fa-history"></i>
-                                <h3>Bilhistoria</h3>
-                                <p>Intresserad av klassiska märken</p>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fas fa-users"></i>
-                                <h3>Community</h3>
-                                <p>Medlem i bilentusiast-gemenskapen</p>
-                            </div>
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose CrushMaster Pro?</h2>
+                <p>We help businesses optimize their waste management with cutting-edge mobile compaction technology</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>Save Money</h3>
+                    <p>Reduce haul-off frequency by up to 50% and save an average of $1,800 per month on waste management costs.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Save Time</h3>
+                    <p>Quick 10-minute compaction sessions keep your operations running smoothly without delays.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </div>
+                    <h3>Maximize Space</h3>
+                    <p>Create up to 70% more usable space in your dumpsters with our advanced compaction technology.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Eco-Friendly</h3>
+                    <p>Reduce CO2 emissions and your carbon footprint with fewer truck hauls and optimized waste management.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="process">
+        <div class="container">
+            <div class="section-header">
+                <h2>How It Works</h2>
+                <p>Simple, efficient, and effective - our 3-step process</p>
+            </div>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Give Us a Call</h3>
+                        <p>Contact us when your dumpster is getting full. We'll schedule a convenient time to visit your location.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>We Compact</h3>
+                        <p>Our mobile compaction truck arrives and safely compacts your waste in just 10 minutes, creating up to 70% more space.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>You Save</h3>
+                        <p>Continue adding waste to your compacted dumpster, reducing haul-off frequency and saving money on disposal costs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat">
+                    <div class="stat-number">70%</div>
+                    <div class="stat-label">Volume Reduction</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">$1,800</div>
+                    <div class="stat-label">Average Monthly Savings</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">10 min</div>
+                    <div class="stat-label">Average Service Time</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">99%</div>
+                    <div class="stat-label">Customer Satisfaction</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Customers Say</h2>
+                <p>Real results from real businesses</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"CrushMaster Pro saved our manufacturing facility over $2,500 per month. We reduced our haul-offs from 8 to 3 per month. The service is reliable and the team is professional."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <span>Operations Manager, TechCorp Industries</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"The compaction service has been a game-changer for our construction site. We can now fit twice as much waste in our dumpsters, saving us time and money on every project."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Mike Rodriguez</h4>
+                            <span>Site Supervisor, BuildRight Construction</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Excellent service! The team is always on time and the compaction results are impressive. We've reduced our waste management costs by 40% since starting with CrushMaster Pro."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Jennifer Chen</h4>
+                            <span>Facilities Director, Metro Distribution</span>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="bilar" class="cars">
-            <div class="container">
-                <h2>Mina bilar</h2>
-                <div class="cars-grid">
-                    <div class="car-card">
-                        <div class="car-image">
-                            <img src="profil.jpg" alt="Ebbe med sin klassiska bil">
-                        </div>
-                        <div class="car-info">
-                            <h3>Klassisk Skatt</h3>
-                            <p>Min första riktiga bil! Denna klassiska skatt representerar allt jag älskar med gamla bilar - karaktär, historia och den unika känslan av att köra något som är äldre än jag själv.</p>
-                            <div class="car-specs">
-                                <span class="spec">Klassisk design</span>
-                                <span class="spec">Väl underhållen</span>
-                                <span class="spec">Unik färg</span>
-                            </div>
-                        </div>
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Everything you need to know about our compaction services</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What types of waste can you compact?</h3>
+                        <i class="fas fa-chevron-down"></i>
                     </div>
-                    
-                    <div class="car-card">
-                        <div class="car-image placeholder">
-                            <i class="fas fa-car"></i>
-                            <p>Fler bilar kommer snart...</p>
-                        </div>
-                        <div class="car-info">
-                            <h3>Framtida projekt</h3>
-                            <p>Som född 2007 har jag stora drömmar! Nästa projekt är redan planerat och jag ser fram emot att dela min resa med er.</p>
-                        </div>
+                    <div class="faq-answer">
+                        <p>We can compact most solid waste materials including general waste, cardboard, plastics, and construction debris. We do not compact concrete, masonry, roofing shingles, or hazardous materials.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Will compaction make my dumpster overweight?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>90% of the time, our service will not put you over your weight limit. In rare cases where it does, the cost savings from reduced haul-offs still make our service more economical than additional dumpster swaps.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How long does each compaction session take?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our mobile compaction service takes an average of 10 minutes per dumpster. We work efficiently to minimize disruption to your operations.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do I need to sign a contract?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No contracts required! We offer flexible service options including on-demand compaction and scheduled service packages to fit your needs.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What dumpster sizes do you service?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We service open-top dumpsters in 20, 30, and 40-yard sizes. We do not service concrete or demolition-specific dumpsters.</p>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <footer>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Ready to Start Saving?</h2>
+                    <p>Get a free quote and see how much you can save with our mobile compaction services.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Call Us</h4>
+                                <p>(555) 123-COMPACT</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email Us</h4>
+                                <p>info@crushmasterpro.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Service Area</h4>
+                                <p>50-mile radius from metro area</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="quoteForm">
+                        <h3>Get Your Free Quote</h3>
+                        <div class="form-group">
+                            <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="company" name="company" placeholder="Company Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="zipCode" name="zipCode" placeholder="ZIP Code" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="haulsPerMonth" name="haulsPerMonth" required>
+                                <option value="">How many hauls per month?</option>
+                                <option value="1-3">1-3 hauls</option>
+                                <option value="4-6">4-6 hauls</option>
+                                <option value="7-10">7-10 hauls</option>
+                                <option value="10+">10+ hauls</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn-primary">Get Free Quote</button>
+                        <p class="form-disclaimer">By submitting this form, you agree to our Privacy Policy and Terms of Service.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Ebbe Torpel</h3>
-                    <p>Bilentusiast & Passionerad Samlare</p>
+                    <h3>CrushMaster Pro</h3>
+                    <p>Your trusted partner in mobile waste compaction services. Save time, money, and space with our innovative solutions.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
                 <div class="footer-section">
-                    <h4>Snabbnavigation</h4>
+                    <h4>Services</h4>
                     <ul>
-                        <li><a href="#hem">Hem</a></li>
-                        <li><a href="#om-mig">Om mig</a></li>
-                        <li><a href="#bilar">Bilar</a></li>
+                        <li><a href="#services">Mobile Compaction</a></li>
+                        <li><a href="#process">How It Works</a></li>
+                        <li><a href="#contact">Get Quote</a></li>
+                        <li><a href="#faq">FAQ</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Följ mig</h4>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
+                    <h4>Industries</h4>
+                    <ul>
+                        <li><a href="#">Manufacturing</a></li>
+                        <li><a href="#">Construction</a></li>
+                        <li><a href="#">Distribution</a></li>
+                        <li><a href="#">Retail</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> (555) 123-COMPACT</li>
+                        <li><i class="fas fa-envelope"></i> info@crushmasterpro.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Metro Area Service</li>
+                    </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Ebbe Torpel. Alla rättigheter förbehållna.</p>
+                <p>&copy; 2025 CrushMaster Pro. All rights reserved. | Privacy Policy | Terms of Service</p>
             </div>
         </div>
     </footer>
