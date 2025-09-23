@@ -1,4 +1,4 @@
-// Mobile Navigation Toggle
+// Mobil navigering toggle
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 
@@ -7,7 +7,7 @@ hamburger.addEventListener('click', () => {
     navMenu.classList.toggle('active');
 });
 
-// Close mobile menu when clicking on a link
+// Stäng mobil meny när man klickar på en länk
 document.querySelectorAll('.nav-menu a').forEach(link => {
     link.addEventListener('click', () => {
         hamburger.classList.remove('active');
@@ -15,7 +15,7 @@ document.querySelectorAll('.nav-menu a').forEach(link => {
     });
 });
 
-// Smooth scrolling for navigation links
+// Mjuk scrollning för navigeringslänkar
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -29,46 +29,46 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// FAQ Accordion
+// FAQ accordion
 document.querySelectorAll('.faq-question').forEach(question => {
     question.addEventListener('click', () => {
         const faqItem = question.parentElement;
         const isActive = faqItem.classList.contains('active');
         
-        // Close all FAQ items
+        // Stäng alla FAQ-objekt
         document.querySelectorAll('.faq-item').forEach(item => {
             item.classList.remove('active');
         });
         
-        // Open clicked item if it wasn't active
+        // Öppna klickat objekt om det inte var aktivt
         if (!isActive) {
             faqItem.classList.add('active');
         }
     });
 });
 
-// Form submission handling
+// Formulärhantering
 const quoteForm = document.getElementById('quoteForm');
 if (quoteForm) {
     quoteForm.addEventListener('submit', function(e) {
         e.preventDefault();
         
-        // Get form data
+        // Hämta formulärdata
         const formData = new FormData(this);
         const data = Object.fromEntries(formData);
         
-        // Show loading state
+        // Visa laddningstillstånd
         const submitBtn = this.querySelector('button[type="submit"]');
         const originalText = submitBtn.textContent;
-        submitBtn.textContent = 'Submitting...';
+        submitBtn.textContent = 'Skickar...';
         submitBtn.disabled = true;
         
-        // Simulate form submission (replace with actual API call)
+        // Simulera formulärskickning (ersätt med faktiskt API-anrop)
         setTimeout(() => {
-            // Show success message
-            showNotification('Thank you! Your quote request has been submitted. We\'ll contact you within 1-2 business days.', 'success');
+            // Visa framgångsmeddelande
+            showNotification('Tack! Din offertförfrågan har skickats in. Vi kommer att kontakta dig inom 1-2 arbetsdagar.', 'success');
             
-            // Reset form
+            // Återställ formulär
             this.reset();
             submitBtn.textContent = originalText;
             submitBtn.disabled = false;
@@ -76,15 +76,15 @@ if (quoteForm) {
     });
 }
 
-// Notification system
+// Notifieringssystem
 function showNotification(message, type = 'info') {
-    // Remove existing notifications
+    // Ta bort befintliga notifieringar
     const existingNotification = document.querySelector('.notification');
     if (existingNotification) {
         existingNotification.remove();
     }
     
-    // Create notification element
+    // Skapa notifieringselement
     const notification = document.createElement('div');
     notification.className = `notification notification-${type}`;
     notification.innerHTML = `
@@ -95,7 +95,7 @@ function showNotification(message, type = 'info') {
         </div>
     `;
     
-    // Add styles
+    // Lägg till stilar
     notification.style.cssText = `
         position: fixed;
         top: 20px;
@@ -110,16 +110,16 @@ function showNotification(message, type = 'info') {
         animation: slideInRight 0.3s ease-out;
     `;
     
-    // Add to page
+    // Lägg till på sidan
     document.body.appendChild(notification);
     
-    // Close button functionality
+    // Stäng-knapp funktionalitet
     const closeBtn = notification.querySelector('.notification-close');
     closeBtn.addEventListener('click', () => {
         notification.remove();
     });
     
-    // Auto remove after 5 seconds
+    // Ta bort automatiskt efter 5 sekunder
     setTimeout(() => {
         if (notification.parentElement) {
             notification.style.animation = 'slideOutRight 0.3s ease-out';
@@ -128,7 +128,7 @@ function showNotification(message, type = 'info') {
     }, 5000);
 }
 
-// Add notification animations to CSS
+// Lägg till notifieringsanimationer till CSS
 const style = document.createElement('style');
 style.textContent = `
     @keyframes slideInRight {
@@ -176,7 +176,7 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
-// Scroll animations
+// Scrollanimationer
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
@@ -191,7 +191,7 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observe elements for animation
+// Observera element för animation
 document.addEventListener('DOMContentLoaded', () => {
     const animatedElements = document.querySelectorAll('.service-card, .testimonial, .step, .stat');
     animatedElements.forEach(el => {
@@ -202,7 +202,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Navbar background on scroll
+// Navbar bakgrund vid scrollning
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 100) {
@@ -214,7 +214,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Utility functions for smooth scrolling
+// Hjälpfunktioner för mjuk scrollning
 function scrollToContact() {
     document.getElementById('contact').scrollIntoView({
         behavior: 'smooth'
@@ -227,7 +227,7 @@ function scrollToProcess() {
     });
 }
 
-// Form validation
+// Formulärvalidering
 function validateForm(form) {
     const requiredFields = form.querySelectorAll('[required]');
     let isValid = true;
@@ -241,7 +241,7 @@ function validateForm(form) {
         }
     });
     
-    // Email validation
+    // E-postvalidering
     const emailField = form.querySelector('input[type="email"]');
     if (emailField && emailField.value) {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -251,11 +251,11 @@ function validateForm(form) {
         }
     }
     
-    // Phone validation
+    // Telefonvalidering
     const phoneField = form.querySelector('input[type="tel"]');
     if (phoneField && phoneField.value) {
-        const phoneRegex = /^[\+]?[1-9][\d]{0,15}$/;
-        if (!phoneRegex.test(phoneField.value.replace(/\D/g, ''))) {
+        const phoneRegex = /^[\+]?[0-9\s\-\(\)]{8,}$/;
+        if (!phoneRegex.test(phoneField.value)) {
             phoneField.style.borderColor = '#e53e3e';
             isValid = false;
         }
@@ -264,7 +264,7 @@ function validateForm(form) {
     return isValid;
 }
 
-// Add form validation to quote form
+// Lägg till formulärvalidering till offertformulär
 if (quoteForm) {
     const inputs = quoteForm.querySelectorAll('input, select');
     inputs.forEach(input => {
@@ -284,21 +284,21 @@ if (quoteForm) {
     });
 }
 
-// Counter animation for stats
+// Räknaranimation för statistik
 function animateCounters() {
     const counters = document.querySelectorAll('.stat-number');
     
     counters.forEach(counter => {
         const target = counter.textContent;
         const isPercentage = target.includes('%');
-        const isDollar = target.includes('$');
+        const isKrona = target.includes('kr');
         const isTime = target.includes('min');
         
         let numericValue;
         if (isPercentage) {
             numericValue = parseInt(target.replace('%', ''));
-        } else if (isDollar) {
-            numericValue = parseInt(target.replace('$', '').replace(',', ''));
+        } else if (isKrona) {
+            numericValue = parseInt(target.replace('kr', '').replace(/\s/g, ''));
         } else if (isTime) {
             numericValue = parseInt(target.replace('min', ''));
         } else {
@@ -317,8 +317,8 @@ function animateCounters() {
             let displayValue = Math.floor(current);
             if (isPercentage) {
                 counter.textContent = displayValue + '%';
-            } else if (isDollar) {
-                counter.textContent = '$' + displayValue.toLocaleString();
+            } else if (isKrona) {
+                counter.textContent = displayValue.toLocaleString('sv-SE') + ' kr';
             } else if (isTime) {
                 counter.textContent = displayValue + ' min';
             } else {
@@ -328,7 +328,7 @@ function animateCounters() {
     });
 }
 
-// Trigger counter animation when stats section is visible
+// Utlös räknaranimation när statistiksektionen är synlig
 const statsSection = document.querySelector('.stats');
 if (statsSection) {
     const statsObserver = new IntersectionObserver((entries) => {
@@ -343,9 +343,9 @@ if (statsSection) {
     statsObserver.observe(statsSection);
 }
 
-// Add loading states and error handling
+// Lägg till laddningstillstånd och felhantering
 document.addEventListener('DOMContentLoaded', () => {
-    // Add loading state to external resources
+    // Lägg till laddningstillstånd till externa resurser
     const images = document.querySelectorAll('img');
     images.forEach(img => {
         img.addEventListener('load', () => {
@@ -356,7 +356,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
     
-    // Initialize tooltips for better UX
+    // Initialisera verktygstips för bättre användarupplevelse
     const tooltipElements = document.querySelectorAll('[data-tooltip]');
     tooltipElements.forEach(element => {
         element.addEventListener('mouseenter', showTooltip);

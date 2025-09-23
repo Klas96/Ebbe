@@ -1,60 +1,60 @@
-# CrushMaster Pro - Mobile Waste Compaction Website
+# Conkross avfallskomprimering - Mobila avfallskomprimeringsservice
 
-A modern, responsive website for mobile waste compaction services, inspired by industry leaders like Sasquatch Waste and Smash My Trash.
+En modern, responsiv webbplats för mobila avfallskomprimeringsservice, inspirerad av branschledare som Sasquatch Waste och Smash My Trash.
 
-## Features
+## Funktioner
 
-- **Responsive Design**: Works perfectly on desktop, tablet, and mobile devices
-- **Modern UI/UX**: Clean, professional design with smooth animations
-- **Interactive Elements**: 
-  - Mobile navigation menu
+- **Responsiv design**: Fungerar perfekt på dator, surfplatta och mobila enheter
+- **Modern UI/UX**: Ren, professionell design med mjuka animationer
+- **Interaktiva element**: 
+  - Mobil navigeringsmeny
   - FAQ accordion
-  - Contact form with validation
-  - Smooth scrolling navigation
-  - Animated statistics counters
-- **Performance Optimized**: Fast loading with optimized CSS and JavaScript
-- **SEO Friendly**: Semantic HTML structure with proper meta tags
+  - Kontaktformulär med validering
+  - Mjuk scrollning navigation
+  - Animerade statistikräknare
+- **Prestandaoptimerad**: Snabb laddning med optimerad CSS och JavaScript
+- **SEO-vänlig**: Semantisk HTML-struktur med korrekta meta-taggar
 
-## Sections
+## Sektioner
 
-1. **Hero Section**: Compelling headline with key benefits and call-to-action buttons
-2. **Services**: Four main service benefits (Save Money, Time, Space, Eco-Friendly)
-3. **Process**: 3-step process explanation
-4. **Statistics**: Key performance metrics with animated counters
-5. **Testimonials**: Customer reviews and success stories
-6. **FAQ**: Expandable frequently asked questions
-7. **Contact**: Contact form and business information
-8. **Footer**: Links, social media, and company information
+1. **Hero-sektion**: Övertygande rubrik med nyckelbenefits och call-to-action knappar
+2. **Tjänster**: Fyra huvudsakliga servicebenefits (Spara pengar, tid, utrymme, miljövänlig)
+3. **Process**: 3-stegs processförklaring
+4. **Statistik**: Nyckelprestandamätningar med animerade räknare
+5. **Kundomdömen**: Kundrecensioner och framgångsberättelser
+6. **FAQ**: Utvidgbara vanliga frågor
+7. **Kontakt**: Kontaktformulär och företagsinformation
+8. **Footer**: Länkar, sociala medier och företagsinformation
 
-## Technologies Used
+## Teknologier som används
 
-- **HTML5**: Semantic markup structure
-- **CSS3**: Modern styling with Flexbox and Grid
-- **JavaScript**: Interactive functionality and animations
-- **Font Awesome**: Icons for visual elements
-- **Google Fonts**: Inter font family for typography
+- **HTML5**: Semantisk markupstruktur
+- **CSS3**: Modern styling med Flexbox och Grid
+- **JavaScript**: Interaktiv funktionalitet och animationer
+- **Font Awesome**: Ikoner för visuella element
+- **Google Fonts**: Inter typsnittsfamilj för typografi
 
-## Getting Started
+## Kom igång
 
-1. Open `index.html` in your web browser
-2. The website is fully functional and ready to use
-3. Customize the content, colors, and branding as needed
+1. Öppna `index.html` i din webbläsare
+2. Webbplatsen är fullt funktionell och redo att använda
+3. Anpassa innehållet, färger och varumärke efter behov
 
-## Customization
+## Anpassning
 
-- **Colors**: Update the CSS custom properties in `styles.css`
-- **Content**: Modify the HTML content in `index.html`
-- **Functionality**: Extend the JavaScript in `script.js`
-- **Branding**: Replace "CrushMaster Pro" with your company name
+- **Färger**: Uppdatera CSS-anpassade egenskaper i `styles.css`
+- **Innehåll**: Modifiera HTML-innehållet i `index.html`
+- **Funktionalitet**: Utöka JavaScript i `script.js`
+- **Varumärke**: Ersätt "Conkross avfallskomprimering" med ditt företagsnamn
 
-## Browser Support
+## Webbläsarstöd
 
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-- Mobile browsers (iOS Safari, Chrome Mobile)
+- Chrome (senaste)
+- Firefox (senaste)
+- Safari (senaste)
+- Edge (senaste)
+- Mobila webbläsare (iOS Safari, Chrome Mobile)
 
-## License
+## Licens
 
-This project is open source and available under the MIT License.
+Detta projekt är öppen källkod och tillgängligt under MIT-licensen.
